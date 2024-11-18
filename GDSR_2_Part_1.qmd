@@ -20,6 +20,8 @@ css: custom.css
 editor: visual
 ---
 
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
 ## Was sind R-Pakete?
 
 <br>
@@ -62,13 +64,19 @@ editor: visual
 
 ## Es gibt Pakete die R erweitern, z.B. die `easystats` Paket-Gruppe und ...
 
-|                                                |
-|------------------------------------------------|
+|                                                        |
+|--------------------------------------------------------|
 | ![](/images/Bild2.png){fig-align="center" width="693"} |
 
 ## ... es gibt Pakete die auch die Art und Weise verändern wie mit R gearbeitet wird, z.B. die `tidyverse` Pakete.
 
 ![](/images/Bild3.png){fig-align="center"}
+
+## Die wichtigsten Pakete nach Downloads
+
+<br>
+
+![](/images/Bild7.png){fig-align="center"}
 
 ## Die Rolle von Posit (früher RStudio)
 
@@ -114,7 +122,7 @@ editor: visual
 
 ![](/images/Bild5.png){fig-align="center"}
 
-## Beispiel: Tidyverse (1)
+## Das Tidyverse besteht aus acht (Kern-)Pakten
 
 ::::: columns
 ::: {.column width="49%"}
@@ -130,34 +138,112 @@ editor: visual
 :::
 :::::
 
-## Beispiel: Tidyverse (2)
+## In der aktuellen Version 2.0.0 ethält das tidyverse folgende Pakete
 
 <br>
 
+-   `ggplot2` ist ein System zur deklarativen Erstellung von Grafiken, das auf der `Grammar of Graphics` basiert.
+
+-   `dplyr` bietet eine Grammatik der Datenmanipulation und stellt einen konsistenten Satz von "Verben" bereit, mit denen sich die häufigsten Herausforderungen bei der Datenmanipulation lösen lassen.
+
+-   `tidyr` bietet eine Reihe von Funktionen um Daten in `tidy data` zu transformieren. `Tidy data` sind Daten mit einer konsistenten Form.
+
+-   `readr` bietet eine schnelle und benutzerfreundliche Möglichkeit, rechteckige Daten (wie z.B. csv) einzulesen. Es ist so konzipiert, dass es viele Arten von Daten flexibel analysiert.
+
+-   `purrr` erweitert das Toolkit für funktionale Programmierung (FP) von R um einen vollständigen und konsistenten Satz von Werkzeugen für die Arbeit mit Funktionen und Vektoren.
+
+-   `tibble` ist eine moderne Neuinterpretation des Data Frame mit einigen Zusatzfeatures.
+
+-   `stringr` bietet eine Reihe Funktionen, die die Arbeit mit Strings (Zeichenketten) so einfach wie möglich machen sollen.
+
+-   `forcats` bietet eine Reihe nützlicher Tools, die gängige Probleme mit Faktoren lösen.
+
+## Die Zielsetzung des tidyverse
+
 <br>
 
--   Das Ziel ist, wenn Daten in der Form vorliegen, wie das Tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller Tidyverse-Pakete und der sich auf das Tidyverse berufenden Pakete out-of-the-box funktionieren.
+-   Das Ziel ist, wenn Daten in der Form vorliegen, wie das tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller tidyverse-Pakete und der sich auf das tidyverse berufenden Pakete out-of-the-box funktionieren.
 
--   Alle Funktionen des Tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.
+-   Alle Funktionen des tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.
 
--   Die Tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).
+-   Die tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).
 
 -   Dieser hohe Standardisierungsgrad hat dazu beigetragen z.B. ggplot2 zum beliebtesten R-Paket zumachen mit aktuell (Oktober 2024) 150 Mio. Downloads (über CRAN).
 
 -   Posit wendet dabei die Standards sowohl auf R als auch auf Python an. Mittelfristig ist das Ziel einen nahtlosen Austausch zwischen Python und R Paketen zu ermöglichen.
 
-## Beispiel: Tidyverse (3)
+## Datenanalyse mit dem tidyverse
+
+<br>
+
+<br>
+
+::::: columns
+::: {.column width="60%"}
+-   Im Internet gibt es zahlreiche Tutorials, die erklären, wie man mit den Paketen des tidyverse arbeitet.
+
+-   Eine sehr gute und umfassende Referenz ist Hadley Wickhams Buch `R for Data Science`.
+
+-   Die 2. Auflage des Buches ist auch als (Open-Source-)Online-Version unter https://r4ds.hadley.nz/ verfügbar.
+
+-   Die Ausführungen in dem Buch sind Grundlage dieses Kapitels.
+:::
+
+::: {.column width="39%"}
+![](images/Bild8.png){fig-align="left" width="315"}
+:::
+:::::
+
+## Der Data Science Prozess
 
 <br>
 
 ![](/images/Bild6.png){fig-align="center"}
 
 ::: aside
-This is taken from the introduction book to data analysis with the tidyverse that you can find in an open source version at: <https://r4ds.hadley.nz>
+Abbildung 1 in https://r4ds.hadley.nz/
 :::
 
-## Die wichtigsten Pakete nach Downloads
+## Wir starten heute mit Daten Visualisierung
 
 <br>
 
-![](/images/Bild7.png){fig-align="center"}
+-   Wir könnten zuerst damit anfangen zu lernen Daten zu *importieren* und in die *richtige Form* (tidy data) zu bringen.
+
+-   Allerdings ist das zu `80%` öde und langweilig und zu `20%` nervend und frustrierend.
+
+-   Daher starten wir erstmal mit Visualisieren und Transformieren von Daten die bereits in optimaler Form vorliegen.
+
+. . .
+
+-   Lassen Sie uns aufs Eis gehen.
+
+![](images/penguins.png){fig-align="right" width="602"}
+
+## Unser Datensatz `palmerpenguins`
+
+::::: columns
+::: {.column width="79%"}
+Der Datensatz den wir hier nutzen ist der Palmer Penguins Datensatz (<https://allisonhorst.github.io/palmerpenguins/index.html>):
+
+Im Datensatz gibt es Informationen zu 344 Pinguinen. Die Daten wurden von 2007 bis 2009 von Kristen Gorman im Rahmen des Palmer Station Long Term Ecological Research Program gesammelt. Der Datensatz enthält drei qualitative Variablen und vier quantitative Variablen und ermöglicht dadurch viele verschiedene Visualisierungen.
+
+Sie können die Daten via `install.packages("palmerpenguins")` installieren und wie jedes andere R-Paket auch via `library(palmerpenguins)` laden. Der Datensatz heißt dann `penguins`.
+:::
+
+::: {.column width="20%"}
+![](images/penguins2.png){fig-align="center" width="197"}
+:::
+:::::
+
+```{webr}
+install.packages("palmerpenguins")
+```
+
+## Die Hauptdarsteller
+
+![](images/BIld9.png)
+
+## Haben Pinguine mit längeren Flossen ein höheres oder ein niedrigeres Gewicht im Vergleich zu Pinguinen mit kürzeren Flossen?
+
+![](images/Bild10.png)

@@ -389,6 +389,11 @@ Prof.&nbsp;Dr.&nbsp;Daniel Schnitzlein
 <h2>… es gibt Pakete die auch die Art und Weise verändern wie mit R gearbeitet wird, z.B. die <code>tidyverse</code> Pakete.</h2>
 
 <img data-src="./images/Bild3.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="die-wichtigsten-pakete-nach-downloads" class="slide level2">
+<h2>Die wichtigsten Pakete nach Downloads</h2>
+<p><br></p>
+
+<img data-src="./images/Bild7.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="die-rolle-von-posit-früher-rstudio" class="slide level2">
 <h2>Die Rolle von Posit (früher RStudio)</h2>
 <p><br></p>
@@ -423,8 +428,8 @@ Prof.&nbsp;Dr.&nbsp;Daniel Schnitzlein
 <h2>Beispiel: Positron</h2>
 
 <img data-src="./images/Bild5.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="beispiel-tidyverse-1" class="slide level2">
-<h2>Beispiel: Tidyverse (1)</h2>
+<section id="das-tidyverse-besteht-aus-acht-kern-pakten" class="slide level2">
+<h2>Das Tidyverse besteht aus acht (Kern-)Pakten</h2>
 <div class="columns">
 <div class="column" style="width:49%;">
 <p><img data-src="./images/Bild3.png"></p>
@@ -434,20 +439,53 @@ Prof.&nbsp;Dr.&nbsp;Daniel Schnitzlein
 <p>(Wickham et al.&nbsp;2019)</p>
 </div></div>
 </section>
-<section id="beispiel-tidyverse-2" class="slide level2">
-<h2>Beispiel: Tidyverse (2)</h2>
-<p><br></p>
+<section id="in-der-aktuellen-version-2.0.0-ethält-das-tidyverse-folgende-pakete" class="slide level2">
+<h2>In der aktuellen Version 2.0.0 ethält das tidyverse folgende Pakete</h2>
 <p><br></p>
 <ul>
-<li><p>Das Ziel ist, wenn Daten in der Form vorliegen, wie das Tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller Tidyverse-Pakete und der sich auf das Tidyverse berufenden Pakete out-of-the-box funktionieren.</p></li>
-<li><p>Alle Funktionen des Tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.</p></li>
-<li><p>Die Tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).</p></li>
+<li><p><code>ggplot2</code> ist ein System zur deklarativen Erstellung von Grafiken, das auf der <code>Grammar of Graphics</code> basiert.</p></li>
+<li><p><code>dplyr</code> bietet eine Grammatik der Datenmanipulation und stellt einen konsistenten Satz von “Verben” bereit, mit denen sich die häufigsten Herausforderungen bei der Datenmanipulation lösen lassen.</p></li>
+<li><p><code>tidyr</code> bietet eine Reihe von Funktionen um Daten in <code>tidy data</code> zu transformieren. <code>Tidy data</code> sind Daten mit einer konsistenten Form.</p></li>
+<li><p><code>readr</code> bietet eine schnelle und benutzerfreundliche Möglichkeit, rechteckige Daten (wie z.B. csv) einzulesen. Es ist so konzipiert, dass es viele Arten von Daten flexibel analysiert.</p></li>
+<li><p><code>purrr</code> erweitert das Toolkit für funktionale Programmierung (FP) von R um einen vollständigen und konsistenten Satz von Werkzeugen für die Arbeit mit Funktionen und Vektoren.</p></li>
+<li><p><code>tibble</code> ist eine moderne Neuinterpretation des Data Frame mit einigen Zusatzfeatures.</p></li>
+<li><p><code>stringr</code> bietet eine Reihe Funktionen, die die Arbeit mit Strings (Zeichenketten) so einfach wie möglich machen sollen.</p></li>
+<li><p><code>forcats</code> bietet eine Reihe nützlicher Tools, die gängige Probleme mit Faktoren lösen.</p></li>
+</ul>
+</section>
+<section id="die-zielsetzung-des-tidyverse" class="slide level2">
+<h2>Die Zielsetzung des tidyverse</h2>
+<p><br></p>
+<ul>
+<li><p>Das Ziel ist, wenn Daten in der Form vorliegen, wie das tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller tidyverse-Pakete und der sich auf das tidyverse berufenden Pakete out-of-the-box funktionieren.</p></li>
+<li><p>Alle Funktionen des tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.</p></li>
+<li><p>Die tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).</p></li>
 <li><p>Dieser hohe Standardisierungsgrad hat dazu beigetragen z.B. ggplot2 zum beliebtesten R-Paket zumachen mit aktuell (Oktober 2024) 150 Mio. Downloads (über CRAN).</p></li>
 <li><p>Posit wendet dabei die Standards sowohl auf R als auch auf Python an. Mittelfristig ist das Ziel einen nahtlosen Austausch zwischen Python und R Paketen zu ermöglichen.</p></li>
 </ul>
 </section>
-<section id="beispiel-tidyverse-3" class="slide level2">
-<h2>Beispiel: Tidyverse (3)</h2>
+<section id="datenanalyse-mit-dem-tidyverse" class="slide level2">
+<h2>Datenanalyse mit dem tidyverse</h2>
+<p><br></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Im Internet gibt es zahlreiche Tutorials, die erklären, wie man mit den Paketen des tidyverse arbeitet.</p></li>
+<li><p>Eine sehr gute und umfassende Referenz ist Hadley Wickhams Buch <code>R for Data Science</code>.</p></li>
+<li><p>Die 2. Auflage des Buches ist auch als (Open-Source-)Online-Version unter https://r4ds.hadley.nz/ verfügbar.</p></li>
+<li><p>Die Ausführungen in dem Buch sind Grundlage dieses Kapitels.</p></li>
+</ul>
+</div><div class="column" style="width:39%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/Bild8.png" class="quarto-figure quarto-figure-left" width="315"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="der-data-science-prozess" class="slide level2">
+<h2>Der Data Science Prozess</h2>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -456,20 +494,70 @@ Prof.&nbsp;Dr.&nbsp;Daniel Schnitzlein
 </div>
 
 <aside><div>
-<p>This is taken from the introduction book to data analysis with the tidyverse that you can find in an open source version at: <a href="https://r4ds.hadley.nz" class="uri">https://r4ds.hadley.nz</a></p>
+<p>Abbildung 1 in https://r4ds.hadley.nz/</p>
 </div></aside></section>
-<section id="die-wichtigsten-pakete-nach-downloads" class="slide level2">
-<h2>Die wichtigsten Pakete nach Downloads</h2>
+<section id="wir-starten-heute-mit-daten-visualisierung" class="slide level2">
+<h2>Wir starten heute mit Daten Visualisierung</h2>
 <p><br></p>
+<ul>
+<li><p>Wir könnten zuerst damit anfangen zu lernen Daten zu <em>importieren</em> und in die <em>richtige Form</em> (tidy data) zu bringen.</p></li>
+<li><p>Allerdings ist das zu <code>80%</code> öde und langweilig und zu <code>20%</code> nervend und frustrierend.</p></li>
+<li><p>Daher starten wir erstmal mit Visualisieren und Transformieren von Daten die bereits in optimaler Form vorliegen.</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Lassen Sie uns aufs Eis gehen.</li>
+</ul>
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/penguins.png" class="quarto-figure quarto-figure-right" width="602"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="unser-datensatz-palmerpenguins" class="slide level2">
+<h2>Unser Datensatz <code>palmerpenguins</code></h2>
+<div class="columns">
+<div class="column" style="width:79%;">
+<p>Der Datensatz den wir hier nutzen ist der Palmer Penguins Datensatz (<a href="https://allisonhorst.github.io/palmerpenguins/index.html" class="uri">https://allisonhorst.github.io/palmerpenguins/index.html</a>):</p>
+<p>Im Datensatz gibt es Informationen zu 344 Pinguinen. Die Daten wurden von 2007 bis 2009 von Kristen Gorman im Rahmen des Palmer Station Long Term Ecological Research Program gesammelt. Der Datensatz enthält drei qualitative Variablen und vier quantitative Variablen und ermöglicht dadurch viele verschiedene Visualisierungen.</p>
+<p>Sie können die Daten via <code>install.packages("palmerpenguins")</code> installieren und wie jedes andere R-Paket auch via <code>library(palmerpenguins)</code> laden. Der Datensatz heißt dann <code>penguins</code>.</p>
+</div><div class="column" style="width:20%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/penguins2.png" class="quarto-figure quarto-figure-center" width="197"></p>
+</figure>
+</div>
+</div></div>
+<div class="cell">
+<div>
+<div id="webr-1" class="exercise-cell">
+
+</div>
+<script type="webr-1-contents">
+eyJhdHRyIjp7ImV2YWwiOnRydWUsImVkaXQiOnRydWV9LCJjb2RlIjoiaW5zdGFsbC5wYWNrYWdlcyhcInBhbG1lcnBlbmd1aW5zXCIpIn0=
+</script>
+</div>
+</div>
+</section>
+<section id="die-hauptdarsteller" class="slide level2">
+<h2>Die Hauptdarsteller</h2>
+
+<img data-src="images/BIld9.png" class="r-stretch"></section>
+<section id="haben-pinguine-mit-längeren-flossen-ein-höheres-oder-ein-niedrigeres-gewicht-im-vergleich-zu-pinguinen-mit-kürzeren-flossen" class="slide level2">
+<h2>Haben Pinguine mit längeren Flossen ein höheres oder ein niedrigeres Gewicht im Vergleich zu Pinguinen mit kürzeren Flossen?</h2>
 
 
-<img data-src="./images/Bild7.png" class="quarto-figure quarto-figure-center r-stretch"><div class="quarto-auto-generated-content">
+<img data-src="images/Bild10.png" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>GitHub-Repo: <a href="https://github.com/dschnitzlein/GDSR_2_Part_1/" class="uri">https://github.com/dschnitzlein/GDSR_2_Part_1/</a></p>
 </div>
 </div>
+<script type="webr-data">
+eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC40LjEvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyJdLCJyZXBvcyI6W119LCJyZW5kZXJfZGYiOiJkZWZhdWx0In0=
+</script>
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W119
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0xIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xuICBhd2FpdCBfd2Vicl92YWx1ZV8xO1xuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xuICB9XG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcbiAgfVxufVxuIn0seyJjZWxsTmFtZSI6IndlYnItMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzEgPSB7XG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8xID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl8xLCB7fSk7XG4ifSx7ImNlbGxOYW1lIjoid2Vici1wcmVsdWRlIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoid2ViUk9qcyA9IHtcbiAgY29uc3QgeyBXZWJSIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lLldlYlI7XG4gIGNvbnN0IHtcbiAgICBXZWJSRXZhbHVhdG9yLFxuICAgIFdlYlJFbnZpcm9ubWVudE1hbmFnZXIsXG4gICAgc2V0dXBSLFxuICAgIGI2NERlY29kZSxcbiAgICBjb2xsYXBzZVBhdGhcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc3RhdHVzQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLXN0YXR1c1wiKTtcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XG5cbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcbiAgc3RhdHVzVGV4dCA9IHN0YXR1c0NvbnRhaW5lci5hcHBlbmRDaGlsZChzdGF0dXNUZXh0KTtcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcblxuICAvLyBIb2lzdCBpbmRpY2F0b3Igb3V0IGZyb20gZmluYWwgc2xpZGUgd2hlbiBydW5uaW5nIHVuZGVyIHJldmVhbFxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcbiAgICByZXZlYWxTdGF0dXMucmVtb3ZlKCk7XG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XG4gIH1cblxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XG4gICAgZWwuY2xvc2VzdCgnc2VjdGlvbi5zbGlkZScpLmNsYXNzTGlzdC5hZGQoXCJzY3JvbGxhYmxlXCIpO1xuICB9KVxuXG4gIC8vIHdlYlIgc3VwcGxlbWVudGFsIGRhdGEgYW5kIG9wdGlvbnNcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XG5cbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGZpbGVzID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZmlsZXNDb250ZW50KSk7XG5cbiAgLy8gSW5pdGlhbGlzZSB3ZWJSIGFuZCBzZXR1cCBmb3IgUiBjb2RlIGV2YWx1YXRpb25cbiAgbGV0IHdlYlJQcm9taXNlID0gKGFzeW5jICh3ZWJSKSA9PiB7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyB3ZWJSYDtcbiAgICBhd2FpdCB3ZWJSLmluaXQoKTtcblxuICAgIC8vIEluc3RhbGwgcHJvdmlkZWQgbGlzdCBvZiBwYWNrYWdlc1xuICAgIC8vIEVuc3VyZSB3ZWJSIGRlZmF1bHQgcmVwbyBpcyBpbmNsdWRlZFxuICAgIGRhdGEucGFja2FnZXMucmVwb3MucHVzaChcImh0dHBzOi8vcmVwby5yLXdhc20ub3JnXCIpXG4gICAgYXdhaXQgZGF0YS5wYWNrYWdlcy5wa2dzLm1hcCgocGtnKSA9PiAoKSA9PiB7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHBhY2thZ2U6ICR7cGtnfWA7XG4gICAgICByZXR1cm4gd2ViUi5ldmFsUlZvaWQoYFxuICAgICAgICB3ZWJyOjppbnN0YWxsKHBrZywgcmVwb3MgPSByZXBvcylcbiAgICAgICAgbGlicmFyeShwa2csIGNoYXJhY3Rlci5vbmx5ID0gVFJVRSlcbiAgICAgIGAsIHsgZW52OiB7XG4gICAgICAgIHBrZzogcGtnLFxuICAgICAgICByZXBvczogZGF0YS5wYWNrYWdlcy5yZXBvcyxcbiAgICAgIH19KTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcblxuICAgIC8vIERvd25sb2FkIGFuZCBpbnN0YWxsIHJlc291cmNlc1xuICAgIGF3YWl0IGZpbGVzLm1hcCgoZmlsZSkgPT4gYXN5bmMgKCkgPT4ge1xuICAgICAgY29uc3QgbmFtZSA9IGZpbGUuc3Vic3RyaW5nKGZpbGUubGFzdEluZGV4T2YoJy8nKSArIDEpO1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyByZXNvdXJjZTogJHtuYW1lfWA7XG4gICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKGZpbGUpO1xuICAgICAgaWYgKCFyZXNwb25zZS5vaykge1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYENhbid0IGRvd25sb2FkIFxcYCR7ZmlsZX1cXGAuIEVycm9yICR7cmVzcG9uc2Uuc3RhdHVzfTogXCIke3Jlc3BvbnNlLnN0YXR1c1RleHR9XCIuYCk7XG4gICAgICB9XG4gICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuYXJyYXlCdWZmZXIoKTtcblxuICAgICAgLy8gU3RvcmUgVVJMcyBpbiB0aGUgY3dkIHdpdGhvdXQgYW55IHN1YmRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGlmIChmaWxlLmluY2x1ZGVzKFwiOi8vXCIpKSB7XG4gICAgICAgIGZpbGUgPSBuYW1lO1xuICAgICAgfVxuXG4gICAgICAvLyBDb2xsYXBzZSBoaWdoZXIgZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgZmlsZSA9IGNvbGxhcHNlUGF0aChmaWxlKTtcblxuICAgICAgLy8gQ3JlYXRlIGRpcmVjdG9yeSB0cmVlLCBpZ25vcmluZyBcImRpcmVjdG9yeSBleGlzdHNcIiBWRlMgZXJyb3JzXG4gICAgICBjb25zdCBwYXJ0cyA9IGZpbGUuc3BsaXQoJy8nKS5zbGljZSgwLCAtMSk7XG4gICAgICBsZXQgcGF0aCA9ICcnO1xuICAgICAgd2hpbGUgKHBhcnRzLmxlbmd0aCA+IDApIHtcbiAgICAgICAgcGF0aCArPSBwYXJ0cy5zaGlmdCgpICsgJy8nO1xuICAgICAgICB0cnkge1xuICAgICAgICAgIGF3YWl0IHdlYlIuRlMubWtkaXIocGF0aCk7XG4gICAgICAgIH0gY2F0Y2ggKGUpIHtcbiAgICAgICAgICBpZiAoIWUubWVzc2FnZS5pbmNsdWRlcyhcIkZTIGVycm9yXCIpKSB7XG4gICAgICAgICAgICB0aHJvdyBlO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICAvLyBXcml0ZSB0aGlzIGZpbGUgdG8gdGhlIFZGU1xuICAgICAgcmV0dXJuIGF3YWl0IHdlYlIuRlMud3JpdGVGaWxlKGZpbGUsIG5ldyBVaW50OEFycmF5KGRhdGEpKTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgSW5zdGFsbGluZyB3ZWJSIHNoaW1zYDtcbiAgICBhd2FpdCB3ZWJSLmV2YWxSVm9pZChgd2Vicjo6c2hpbV9pbnN0YWxsKClgKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgV2ViUiBlbnZpcm9ubWVudCBzZXR1cGA7XG4gICAgYXdhaXQgc2V0dXBSKHdlYlIsIGRhdGEpO1xuXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XG4gICAgICBzdGF0dXNDb250YWluZXIucGFyZW50Tm9kZS5yZW1vdmUoKTtcbiAgICB9XG4gICAgcmV0dXJuIHdlYlI7XG4gIH0pKG5ldyBXZWJSKGRhdGEub3B0aW9ucykpO1xuXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXG4gIGNvbnN0IHJlbmRlcmVkT2pzID0ge307XG5cbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcbiAgICBjb25zdCB3ZWJSID0gYXdhaXQgd2ViUlByb21pc2U7XG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFdlYlJFdmFsdWF0b3Iod2ViUiwgY29udGV4dClcbiAgICBhd2FpdCBldmFsdWF0b3IucHJvY2VzcyhpbnB1dHMpO1xuICAgIHJldHVybiBldmFsdWF0b3IuY29udGFpbmVyO1xuICB9XG5cbiAgcmV0dXJuIHtcbiAgICBwcm9jZXNzLFxuICAgIHdlYlJQcm9taXNlLFxuICAgIHJlbmRlcmVkT2pzLFxuICB9O1xufVxuIn1dfQ==
 </script>
 <div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
 <div id="exercise-loading-status" class="d-flex gap-2">
@@ -480,7 +568,7 @@ eyJjb250ZW50cyI6W119
 </div>
 </div>
 <script type="vfs-file">
-WyJkYXRhIl0=
+W10=
 </script>
 </section>
     </div>

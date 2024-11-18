@@ -35,6 +35,13 @@
     "text": "… es gibt Pakete die auch die Art und Weise verändern wie mit R gearbeitet wird, z.B. die tidyverse Pakete."
   },
   {
+    "objectID": "GDSR_2_Part_1.html#die-wichtigsten-pakete-nach-downloads",
+    "href": "GDSR_2_Part_1.html#die-wichtigsten-pakete-nach-downloads",
+    "title": "Teil II - NN",
+    "section": "Die wichtigsten Pakete nach Downloads",
+    "text": "Die wichtigsten Pakete nach Downloads"
+  },
+  {
     "objectID": "GDSR_2_Part_1.html#die-rolle-von-posit-früher-rstudio",
     "href": "GDSR_2_Part_1.html#die-rolle-von-posit-früher-rstudio",
     "title": "Teil II - NN",
@@ -56,31 +63,66 @@
     "text": "Beispiel: Positron"
   },
   {
-    "objectID": "GDSR_2_Part_1.html#beispiel-tidyverse-1",
-    "href": "GDSR_2_Part_1.html#beispiel-tidyverse-1",
+    "objectID": "GDSR_2_Part_1.html#das-tidyverse-besteht-aus-acht-kern-pakten",
+    "href": "GDSR_2_Part_1.html#das-tidyverse-besteht-aus-acht-kern-pakten",
     "title": "Teil II - NN",
-    "section": "Beispiel: Tidyverse (1)",
-    "text": "Beispiel: Tidyverse (1)\n\n\n\n\nAt a high level, the tidyverse is a language for solving data science challenges with R code. Its primary goal is to facilitate a conversation between a human and a computer about data.\nLess abstractly, the tidyverse is a collection of R packages that share a high-level design philosophy and low-level grammar and data structures, so that learning one package makes it easier to learn the next.\n(Wickham et al. 2019)"
+    "section": "Das Tidyverse besteht aus acht (Kern-)Pakten",
+    "text": "Das Tidyverse besteht aus acht (Kern-)Pakten\n\n\n\n\nAt a high level, the tidyverse is a language for solving data science challenges with R code. Its primary goal is to facilitate a conversation between a human and a computer about data.\nLess abstractly, the tidyverse is a collection of R packages that share a high-level design philosophy and low-level grammar and data structures, so that learning one package makes it easier to learn the next.\n(Wickham et al. 2019)"
   },
   {
-    "objectID": "GDSR_2_Part_1.html#beispiel-tidyverse-2",
-    "href": "GDSR_2_Part_1.html#beispiel-tidyverse-2",
+    "objectID": "GDSR_2_Part_1.html#in-der-aktuellen-version-2.0.0-ethält-das-tidyverse-folgende-pakete",
+    "href": "GDSR_2_Part_1.html#in-der-aktuellen-version-2.0.0-ethält-das-tidyverse-folgende-pakete",
     "title": "Teil II - NN",
-    "section": "Beispiel: Tidyverse (2)",
-    "text": "Beispiel: Tidyverse (2)\n\n\n\nDas Ziel ist, wenn Daten in der Form vorliegen, wie das Tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller Tidyverse-Pakete und der sich auf das Tidyverse berufenden Pakete out-of-the-box funktionieren.\nAlle Funktionen des Tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.\nDie Tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).\nDieser hohe Standardisierungsgrad hat dazu beigetragen z.B. ggplot2 zum beliebtesten R-Paket zumachen mit aktuell (Oktober 2024) 150 Mio. Downloads (über CRAN).\nPosit wendet dabei die Standards sowohl auf R als auch auf Python an. Mittelfristig ist das Ziel einen nahtlosen Austausch zwischen Python und R Paketen zu ermöglichen."
+    "section": "In der aktuellen Version 2.0.0 ethält das tidyverse folgende Pakete",
+    "text": "In der aktuellen Version 2.0.0 ethält das tidyverse folgende Pakete\n\n\nggplot2 ist ein System zur deklarativen Erstellung von Grafiken, das auf der Grammar of Graphics basiert.\ndplyr bietet eine Grammatik der Datenmanipulation und stellt einen konsistenten Satz von “Verben” bereit, mit denen sich die häufigsten Herausforderungen bei der Datenmanipulation lösen lassen.\ntidyr bietet eine Reihe von Funktionen um Daten in tidy data zu transformieren. Tidy data sind Daten mit einer konsistenten Form.\nreadr bietet eine schnelle und benutzerfreundliche Möglichkeit, rechteckige Daten (wie z.B. csv) einzulesen. Es ist so konzipiert, dass es viele Arten von Daten flexibel analysiert.\npurrr erweitert das Toolkit für funktionale Programmierung (FP) von R um einen vollständigen und konsistenten Satz von Werkzeugen für die Arbeit mit Funktionen und Vektoren.\ntibble ist eine moderne Neuinterpretation des Data Frame mit einigen Zusatzfeatures.\nstringr bietet eine Reihe Funktionen, die die Arbeit mit Strings (Zeichenketten) so einfach wie möglich machen sollen.\nforcats bietet eine Reihe nützlicher Tools, die gängige Probleme mit Faktoren lösen."
   },
   {
-    "objectID": "GDSR_2_Part_1.html#beispiel-tidyverse-3",
-    "href": "GDSR_2_Part_1.html#beispiel-tidyverse-3",
+    "objectID": "GDSR_2_Part_1.html#die-zielsetzung-des-tidyverse",
+    "href": "GDSR_2_Part_1.html#die-zielsetzung-des-tidyverse",
     "title": "Teil II - NN",
-    "section": "Beispiel: Tidyverse (3)",
-    "text": "Beispiel: Tidyverse (3)\n\n\n\n\n\n\n\n\nThis is taken from the introduction book to data analysis with the tidyverse that you can find in an open source version at: https://r4ds.hadley.nz"
+    "section": "Die Zielsetzung des tidyverse",
+    "text": "Die Zielsetzung des tidyverse\n\n\nDas Ziel ist, wenn Daten in der Form vorliegen, wie das tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller tidyverse-Pakete und der sich auf das tidyverse berufenden Pakete out-of-the-box funktionieren.\nAlle Funktionen des tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.\nDie tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).\nDieser hohe Standardisierungsgrad hat dazu beigetragen z.B. ggplot2 zum beliebtesten R-Paket zumachen mit aktuell (Oktober 2024) 150 Mio. Downloads (über CRAN).\nPosit wendet dabei die Standards sowohl auf R als auch auf Python an. Mittelfristig ist das Ziel einen nahtlosen Austausch zwischen Python und R Paketen zu ermöglichen."
   },
   {
-    "objectID": "GDSR_2_Part_1.html#die-wichtigsten-pakete-nach-downloads",
-    "href": "GDSR_2_Part_1.html#die-wichtigsten-pakete-nach-downloads",
+    "objectID": "GDSR_2_Part_1.html#datenanalyse-mit-dem-tidyverse",
+    "href": "GDSR_2_Part_1.html#datenanalyse-mit-dem-tidyverse",
     "title": "Teil II - NN",
-    "section": "Die wichtigsten Pakete nach Downloads",
-    "text": "Die wichtigsten Pakete nach Downloads\n\n\n\n\n\nGitHub-Repo: https://github.com/dschnitzlein/GDSR_2_Part_1/"
+    "section": "Datenanalyse mit dem tidyverse",
+    "text": "Datenanalyse mit dem tidyverse\n\n\n\n\n\nIm Internet gibt es zahlreiche Tutorials, die erklären, wie man mit den Paketen des tidyverse arbeitet.\nEine sehr gute und umfassende Referenz ist Hadley Wickhams Buch R for Data Science.\nDie 2. Auflage des Buches ist auch als (Open-Source-)Online-Version unter https://r4ds.hadley.nz/ verfügbar.\nDie Ausführungen in dem Buch sind Grundlage dieses Kapitels."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#der-data-science-prozess",
+    "href": "GDSR_2_Part_1.html#der-data-science-prozess",
+    "title": "Teil II - NN",
+    "section": "Der Data Science Prozess",
+    "text": "Der Data Science Prozess\n\n\n\n\n\n\n\n\nAbbildung 1 in https://r4ds.hadley.nz/"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#wir-starten-heute-mit-daten-visualisierung",
+    "href": "GDSR_2_Part_1.html#wir-starten-heute-mit-daten-visualisierung",
+    "title": "Teil II - NN",
+    "section": "Wir starten heute mit Daten Visualisierung",
+    "text": "Wir starten heute mit Daten Visualisierung\n\n\nWir könnten zuerst damit anfangen zu lernen Daten zu importieren und in die richtige Form (tidy data) zu bringen.\nAllerdings ist das zu 80% öde und langweilig und zu 20% nervend und frustrierend.\nDaher starten wir erstmal mit Visualisieren und Transformieren von Daten die bereits in optimaler Form vorliegen.\n\n\n\nLassen Sie uns aufs Eis gehen."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#unser-datensatz-palmerpenguins",
+    "href": "GDSR_2_Part_1.html#unser-datensatz-palmerpenguins",
+    "title": "Teil II - NN",
+    "section": "Unser Datensatz palmerpenguins",
+    "text": "Unser Datensatz palmerpenguins\n\n\nDer Datensatz den wir hier nutzen ist der Palmer Penguins Datensatz (https://allisonhorst.github.io/palmerpenguins/index.html):\nIm Datensatz gibt es Informationen zu 344 Pinguinen. Die Daten wurden von 2007 bis 2009 von Kristen Gorman im Rahmen des Palmer Station Long Term Ecological Research Program gesammelt. Der Datensatz enthält drei qualitative Variablen und vier quantitative Variablen und ermöglicht dadurch viele verschiedene Visualisierungen.\nSie können die Daten via install.packages(\"palmerpenguins\") installieren und wie jedes andere R-Paket auch via library(palmerpenguins) laden. Der Datensatz heißt dann penguins."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#die-hauptdarsteller",
+    "href": "GDSR_2_Part_1.html#die-hauptdarsteller",
+    "title": "Teil II - NN",
+    "section": "Die Hauptdarsteller",
+    "text": "Die Hauptdarsteller"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#haben-pinguine-mit-längeren-flossen-ein-höheres-oder-ein-niedrigeres-gewicht-im-vergleich-zu-pinguinen-mit-kürzeren-flossen",
+    "href": "GDSR_2_Part_1.html#haben-pinguine-mit-längeren-flossen-ein-höheres-oder-ein-niedrigeres-gewicht-im-vergleich-zu-pinguinen-mit-kürzeren-flossen",
+    "title": "Teil II - NN",
+    "section": "Haben Pinguine mit längeren Flossen ein höheres oder ein niedrigeres Gewicht im Vergleich zu Pinguinen mit kürzeren Flossen?",
+    "text": "Haben Pinguine mit längeren Flossen ein höheres oder ein niedrigeres Gewicht im Vergleich zu Pinguinen mit kürzeren Flossen?\n\n\n\n\nGitHub-Repo: https://github.com/dschnitzlein/GDSR_2_Part_1/"
   }
 ]
