@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "GDSR_2_Part_1.html#was-sind-r-pakete",
+    "href": "GDSR_2_Part_1.html#was-sind-r-pakete",
+    "title": "Teil II - NN",
+    "section": "Was sind R-Pakete?",
+    "text": "Was sind R-Pakete?\n\n\n\nR besteht aus einer Basiskomponente, die durch sogenannte R-Pakete erweitert werden kann um bestimmte Aufgaben zu lösen.\nDas wichtigste Repository für R-Pakete, das Comprehensive R Archive Network (CRAN), listet zur Zeit 21.517 (Oktober 2024) verfügbare Pakete auf (zuzüglich einer Unmenge von Paketen auf Github).\nFür alle (die meisten) verfügbaren Pakete ist eine umfangreiche Dokumentation verfügbar.\nWarum?\nMöglichkeiten den Überblick zu behalten: CRAN Task Views (siehe nächste Seite), Social Media Posts, R-User Konferenzen (meist auch via YouTube verfügbar) oder Diskussionen in Foren und/oder GitHub."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#cran-task-views",
+    "href": "GDSR_2_Part_1.html#cran-task-views",
+    "title": "Teil II - NN",
+    "section": "CRAN Task Views",
+    "text": "CRAN Task Views"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#was-bedeuten-pakete-für-r",
+    "href": "GDSR_2_Part_1.html#was-bedeuten-pakete-für-r",
+    "title": "Teil II - NN",
+    "section": "Was bedeuten Pakete für R?",
+    "text": "Was bedeuten Pakete für R?\n\n\n\nPakete erweitern den Funktionsumfang von R erheblich. Pakete werden von der Community und/oder Unternehmen erstellt und gepflegt.\nVorteil : Durch die aktive und breite Community stellt R auch für hochspezalisierte Fragestellungen Lösungen bereit, die properitäre Software u.U. nicht enthalten würde.\nVorteil: Deutlich höhere Entwicklungsgeschwindigkeit neuer Methoden.\nNachteil: Nicht alle Pakete sind zwingend miteinander kompatibel. Fallen die Akteure, die ein Paket betreuen aus, kann es sein, dass die Funktionalität verloren geht, wenn sich R weiterentwickelt.\nNachteil: Ebenso umfasst Versionierung nicht nur R sondern auch alle Pakete.\nRealität: Viele populäre Pakete werden in Gruppen zusammengefasst entwickelt und gepflegt. Oft sind zentrale Figuren entweder bei Unternehmen angestellt, die einen Bezug zu R haben, oder die R extensiv nutzen."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#es-gibt-pakete-die-r-erweitern-z.b.-die-easystats-paket-gruppe-und",
+    "href": "GDSR_2_Part_1.html#es-gibt-pakete-die-r-erweitern-z.b.-die-easystats-paket-gruppe-und",
+    "title": "Teil II - NN",
+    "section": "Es gibt Pakete die R erweitern, z.B. die easystats Paket-Gruppe und …",
+    "text": "Es gibt Pakete die R erweitern, z.B. die easystats Paket-Gruppe und …"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#es-gibt-pakete-die-auch-die-art-und-weise-verändern-wie-mit-r-gearbeitet-wird-z.b.-die-tidyverse-pakete.",
+    "href": "GDSR_2_Part_1.html#es-gibt-pakete-die-auch-die-art-und-weise-verändern-wie-mit-r-gearbeitet-wird-z.b.-die-tidyverse-pakete.",
+    "title": "Teil II - NN",
+    "section": "… es gibt Pakete die auch die Art und Weise verändern wie mit R gearbeitet wird, z.B. die tidyverse Pakete.",
+    "text": "… es gibt Pakete die auch die Art und Weise verändern wie mit R gearbeitet wird, z.B. die tidyverse Pakete."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#die-rolle-von-posit-früher-rstudio",
+    "href": "GDSR_2_Part_1.html#die-rolle-von-posit-früher-rstudio",
+    "title": "Teil II - NN",
+    "section": "Die Rolle von Posit (früher RStudio)",
+    "text": "Die Rolle von Posit (früher RStudio)\n\n\n\nDie Entwicklung von R zu der Verbreitung die R heute hat, wäre ohne die grafische IDE RStudio die 2011 von der damals gleichnamigen Firma auf den Markt gebracht wurde nicht denkbar gewesen.\nRStudio hat aber auch massiv die Entwicklung von R von einem “Spielplatz für Akademiker” hin zu einer zuverlässigen Grundlage für Produktivsysteme vorangetrieben.\nRStudio verdient dabei ihr Geld mit der Bereitstellung von R Entwicklungsumgebungen (u.a. RStudio) für Unternehmen.\nInzwischen hat sich RStudio in Posit umbenannt und hat neben dem Fokus auf R auch Python im Blick.\nViele hoch innovative Pakete in R und Python werden direkt oder indirekt von Posit entwickelt.\nDadurch ergibt sich natürlich eine gewisse Macht aber auch eine gewisse Notwendigkeit Standards zu setzen (siehe Tidyverse).\nNicht unbedingt in der ganzen R Community beliebt."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#beispiel-lebenszyklus-für-funktionen",
+    "href": "GDSR_2_Part_1.html#beispiel-lebenszyklus-für-funktionen",
+    "title": "Teil II - NN",
+    "section": "Beispiel: Lebenszyklus für Funktionen",
+    "text": "Beispiel: Lebenszyklus für Funktionen\n\n\n\n\nEin weit verbreitetes Problem mit Funktionen in R Paketen war lange Zeit (und ist es stellenweise immer noch), dass diese teilweise sehr kurzfristig durch neue Versionen ersetzt werden.\nInsbesondere in Produktivumgebungen ist das sehr ärgerlich, wenn z.B. Dashboards nach Updates neue angepasst werden müssen.\nIdealerweise kündigen die jeweiligen Administratoren der Pakete solche Änderungen an. Jedoch ist das nicht immer so.\nPosit/RStudio hat um diesem Problem zu begeben einen Lebenszyklus für Funktionen/Pakete etc. eingeführt."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#beispiel-positron",
+    "href": "GDSR_2_Part_1.html#beispiel-positron",
+    "title": "Teil II - NN",
+    "section": "Beispiel: Positron",
+    "text": "Beispiel: Positron"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#beispiel-tidyverse-1",
+    "href": "GDSR_2_Part_1.html#beispiel-tidyverse-1",
+    "title": "Teil II - NN",
+    "section": "Beispiel: Tidyverse (1)",
+    "text": "Beispiel: Tidyverse (1)\n\n\n\n\nAt a high level, the tidyverse is a language for solving data science challenges with R code. Its primary goal is to facilitate a conversation between a human and a computer about data.\nLess abstractly, the tidyverse is a collection of R packages that share a high-level design philosophy and low-level grammar and data structures, so that learning one package makes it easier to learn the next.\n(Wickham et al. 2019)"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#beispiel-tidyverse-2",
+    "href": "GDSR_2_Part_1.html#beispiel-tidyverse-2",
+    "title": "Teil II - NN",
+    "section": "Beispiel: Tidyverse (2)",
+    "text": "Beispiel: Tidyverse (2)\n\n\n\nDas Ziel ist, wenn Daten in der Form vorliegen, wie das Tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller Tidyverse-Pakete und der sich auf das Tidyverse berufenden Pakete out-of-the-box funktionieren.\nAlle Funktionen des Tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.\nDie Tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).\nDieser hohe Standardisierungsgrad hat dazu beigetragen z.B. ggplot2 zum beliebtesten R-Paket zumachen mit aktuell (Oktober 2024) 150 Mio. Downloads (über CRAN).\nPosit wendet dabei die Standards sowohl auf R als auch auf Python an. Mittelfristig ist das Ziel einen nahtlosen Austausch zwischen Python und R Paketen zu ermöglichen."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#beispiel-tidyverse-3",
+    "href": "GDSR_2_Part_1.html#beispiel-tidyverse-3",
+    "title": "Teil II - NN",
+    "section": "Beispiel: Tidyverse (3)",
+    "text": "Beispiel: Tidyverse (3)\n\n\n\n\n\n\n\n\nThis is taken from the introduction book to data analysis with the tidyverse that you can find in an open source version at: https://r4ds.hadley.nz"
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#die-wichtigsten-pakete-nach-downloads",
+    "href": "GDSR_2_Part_1.html#die-wichtigsten-pakete-nach-downloads",
+    "title": "Teil II - NN",
+    "section": "Die wichtigsten Pakete nach Downloads",
+    "text": "Die wichtigsten Pakete nach Downloads\n\n\n\n\n\nGitHub-Repo: https://github.com/dschnitzlein/GDSR_2_Part_1/"
+  }
+]

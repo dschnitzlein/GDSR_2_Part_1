@@ -1,0 +1,163 @@
+---
+title: "Teil II - NN"
+subtitle: "Grundlagen der Datenanalyse und Statistik mit R | WS 2024/25"
+author: "Prof. Dr. Daniel Schnitzlein"
+footer: "GitHub-Repo: <https://github.com/dschnitzlein/GDSR_2_Part_1/>"
+engine: knitr
+format: 
+  live-revealjs:
+    theme: [default, custom.scss]
+    progress: true
+    width: 1400
+    resources: 
+      - data
+    title-slide-attributes:
+      data-background-color: "#2A4D69"
+      data-background-image: "/images/logo.png"
+      data-background-size: "30%"
+      data-background-position: "center right 20px"
+css: custom.css
+editor: visual
+---
+
+## Was sind R-Pakete?
+
+<br>
+
+::: incremental
+-   R besteht aus einer Basiskomponente, die durch sogenannte R-Pakete erweitert werden kann um bestimmte Aufgaben zu lösen.
+
+-   Das wichtigste Repository für R-Pakete, das Comprehensive R Archive Network (CRAN), listet zur Zeit 21.517 (Oktober 2024) verfügbare Pakete auf (zuzüglich einer Unmenge von Paketen auf Github).
+
+-   Für alle (die meisten) verfügbaren Pakete ist eine umfangreiche Dokumentation verfügbar.
+
+-   Warum?
+
+-   Möglichkeiten den Überblick zu behalten: CRAN Task Views (siehe nächste Seite), Social Media Posts, R-User Konferenzen (meist auch via YouTube verfügbar) oder Diskussionen in Foren und/oder GitHub.
+:::
+
+## CRAN Task Views
+
+<br>
+
+![](/images/Bild1.png){fig-align="center"}
+
+## Was bedeuten Pakete für R?
+
+<br>
+
+::: incremental
+-   Pakete erweitern den Funktionsumfang von R erheblich. Pakete werden von der Community und/oder Unternehmen erstellt und gepflegt.
+
+-   `Vorteil` : Durch die aktive und breite Community stellt R auch für hochspezalisierte Fragestellungen Lösungen bereit, die properitäre Software u.U. nicht enthalten würde.
+
+-   `Vorteil`: Deutlich höhere Entwicklungsgeschwindigkeit neuer Methoden.
+
+-   `Nachteil`: Nicht alle Pakete sind zwingend miteinander kompatibel. Fallen die Akteure, die ein Paket betreuen aus, kann es sein, dass die Funktionalität verloren geht, wenn sich R weiterentwickelt.
+
+-   `Nachteil`: Ebenso umfasst Versionierung nicht nur R sondern auch alle Pakete.
+
+-   `Realität`: Viele populäre Pakete werden in Gruppen zusammengefasst entwickelt und gepflegt. Oft sind zentrale Figuren entweder bei Unternehmen angestellt, die einen Bezug zu R haben, oder die R extensiv nutzen.
+:::
+
+## Es gibt Pakete die R erweitern, z.B. die `easystats` Paket-Gruppe und ...
+
+|                                                |
+|------------------------------------------------|
+| ![](/images/Bild2.png){fig-align="center" width="693"} |
+
+## ... es gibt Pakete die auch die Art und Weise verändern wie mit R gearbeitet wird, z.B. die `tidyverse` Pakete.
+
+![](/images/Bild3.png){fig-align="center"}
+
+## Die Rolle von Posit (früher RStudio)
+
+<br>
+
+::: incremental
+-   Die Entwicklung von R zu der Verbreitung die R heute hat, wäre ohne die grafische IDE RStudio die 2011 von der damals gleichnamigen Firma auf den Markt gebracht wurde nicht denkbar gewesen.
+
+-   RStudio hat aber auch massiv die Entwicklung von R von einem "Spielplatz für Akademiker" hin zu einer zuverlässigen Grundlage für Produktivsysteme vorangetrieben.
+
+-   RStudio verdient dabei ihr Geld mit der Bereitstellung von R Entwicklungsumgebungen (u.a. RStudio) für Unternehmen.
+
+-   Inzwischen hat sich RStudio in Posit umbenannt und hat neben dem Fokus auf R auch Python im Blick.
+
+-   Viele hoch innovative Pakete in R und Python werden direkt oder indirekt von Posit entwickelt.
+
+-   Dadurch ergibt sich natürlich eine gewisse Macht aber auch eine gewisse Notwendigkeit Standards zu setzen (siehe Tidyverse).
+
+-   Nicht unbedingt in der ganzen R Community beliebt.
+:::
+
+## Beispiel: Lebenszyklus für Funktionen
+
+<br>
+
+::::: columns
+::: {.column width="50%"}
+-   Ein weit verbreitetes Problem mit Funktionen in R Paketen war lange Zeit (und ist es stellenweise immer noch), dass diese teilweise sehr kurzfristig durch neue Versionen ersetzt werden.
+
+-   Insbesondere in Produktivumgebungen ist das sehr ärgerlich, wenn z.B. Dashboards nach Updates neue angepasst werden müssen.
+
+-   Idealerweise kündigen die jeweiligen Administratoren der Pakete solche Änderungen an. Jedoch ist das nicht immer so.
+
+-   Posit/RStudio hat um diesem Problem zu begeben einen Lebenszyklus für Funktionen/Pakete etc. eingeführt.
+:::
+
+::: {.column width="50%"}
+![](/images/Bild4.png){width="700"}
+:::
+:::::
+
+## Beispiel: Positron
+
+![](/images/Bild5.png){fig-align="center"}
+
+## Beispiel: Tidyverse (1)
+
+::::: columns
+::: {.column width="49%"}
+![](/images/Bild3.png)
+:::
+
+::: {.column width="49%"}
+*At a high level, the tidyverse is a language for solving data science challenges with R code. Its primary goal is to facilitate a conversation between a human and a computer about data.*
+
+*Less abstractly, the tidyverse is a collection of R packages that share a high-level design philosophy and low-level grammar and data structures, so that learning one package makes it easier to learn the next.*
+
+(Wickham et al. 2019)
+:::
+:::::
+
+## Beispiel: Tidyverse (2)
+
+<br>
+
+<br>
+
+-   Das Ziel ist, wenn Daten in der Form vorliegen, wie das Tidyverse die Daten gerne hätte (sog. tidy Datenformat), dann sollten alle Funktionen aller Tidyverse-Pakete und der sich auf das Tidyverse berufenden Pakete out-of-the-box funktionieren.
+
+-   Alle Funktionen des Tidyverse sollen einer gemeinsamen Logik im Funktionsaufbau folgen.
+
+-   Die Tidyverse Pakete orientieren sich dabei an einem genormten Ablauf einer Datenanalyse (siehe nächste Folie).
+
+-   Dieser hohe Standardisierungsgrad hat dazu beigetragen z.B. ggplot2 zum beliebtesten R-Paket zumachen mit aktuell (Oktober 2024) 150 Mio. Downloads (über CRAN).
+
+-   Posit wendet dabei die Standards sowohl auf R als auch auf Python an. Mittelfristig ist das Ziel einen nahtlosen Austausch zwischen Python und R Paketen zu ermöglichen.
+
+## Beispiel: Tidyverse (3)
+
+<br>
+
+![](/images/Bild6.png){fig-align="center"}
+
+::: aside
+This is taken from the introduction book to data analysis with the tidyverse that you can find in an open source version at: <https://r4ds.hadley.nz>
+:::
+
+## Die wichtigsten Pakete nach Downloads
+
+<br>
+
+![](/images/Bild7.png){fig-align="center"}
