@@ -133,7 +133,7 @@ editor: visual
 
 ::::: columns
 ::: {.column width="49%"}
-![](/images/Bild3.png)
+![](/images/Bild3.png){width="639"}
 :::
 
 ::: {.column width="49%"}
@@ -226,20 +226,20 @@ Abbildung 1 in https://r4ds.hadley.nz/
 
 -   Lassen Sie uns aufs Eis gehen.
 
--   ![](images/penguins.png){fig-align="right" width="602"}
+-   ![](images/penguins.png){fig-align="right" width="415"}
 :::
 
 ## Unser Datensatz `palmerpenguins`
 
 ::::: columns
 ::: {.column width="79%"}
-- Der Datensatz den wir hier nutzen ist der Palmer Penguins Datensatz (344 Pinguine):
+-   Der Datensatz den wir hier nutzen ist der Palmer Penguins Datensatz (344 Pinguine):
 
-- Die Informationen wurden von 2007 bis 2009 von Kristen Gorman im Rahmen des Palmer Station Long Term Ecological Research Program gesammelt. 
+-   Die Informationen wurden von 2007 bis 2009 von Kristen Gorman im Rahmen des Palmer Station Long Term Ecological Research Program gesammelt.
 
-- Der Datensatz enthält drei qualitative Variablen und vier quantitative Variablen und ermöglicht dadurch viele verschiedene Visualisierungen.
+-   Der Datensatz enthält drei qualitative Variablen und vier quantitative Variablen und ermöglicht dadurch viele verschiedene Visualisierungen.
 
-- Sie können die Daten via `install.packages('palmerpenguins')` installieren und wie jedes andere R-Paket auch via `library(palmerpenguins)` laden. Der Datensatz heißt `penguins`.
+-   Sie können die Daten via `install.packages('palmerpenguins')` installieren und wie jedes andere R-Paket auch via `library(palmerpenguins)` laden. Der Datensatz heißt `penguins`.
 :::
 
 ::: {.column width="20%"}
@@ -256,7 +256,7 @@ library(palmerpenguins)
 
 <br>
 
-::: {.aside}
+::: aside
 Details zum Datensatz finden Sie hier: <https://allisonhorst.github.io/palmerpenguins/index.html>
 :::
 
@@ -441,3 +441,15 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
   labs(title = "Body mass and flipper length", subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins", x = "Flipper length (mm)", y = "Body mass (g)", color = "Species", shape = "Species") + 
   theme_economist()
 ```
+
+## Man kann Themes zu allem (!) im Internet finden
+
+::: r-stack
+![](images/Bild12.png){.fragment}
+
+![](images/Bild13.png){.fragment}
+
+![](images/Bild14.png){.fragment}
+
+![](images/Bild15.png){.fragment}
+:::

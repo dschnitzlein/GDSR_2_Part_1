@@ -193,6 +193,13 @@
     "href": "GDSR_2_Part_1.html#themes-später-mehr-dazu",
     "title": "Das Tidyverse und erste Schritte in ggplot2",
     "section": "Themes (später mehr dazu)",
-    "text": "Themes (später mehr dazu)\n\nggplot2 ermöglicht es anhand von Themes die Formatierung von Abbildungen weitgehend zu automatisieren (z.B. Anwendung von einheitlichem Corporate Design). Wir werden uns mit Themes später im Seminar im Detail beschäftigen.\n\n\n\n\n\n\n\n\n\n\n\nGitHub-Repo: https://github.com/dschnitzlein/GDSR_2_Part_1/"
+    "text": "Themes (später mehr dazu)\n\nggplot2 ermöglicht es anhand von Themes die Formatierung von Abbildungen weitgehend zu automatisieren (z.B. Anwendung von einheitlichem Corporate Design). Wir werden uns mit Themes später im Seminar im Detail beschäftigen."
+  },
+  {
+    "objectID": "GDSR_2_Part_1.html#man-kann-themes-zu-allem-im-internet-finden",
+    "href": "GDSR_2_Part_1.html#man-kann-themes-zu-allem-im-internet-finden",
+    "title": "Das Tidyverse und erste Schritte in ggplot2",
+    "section": "Man kann Themes zu allem (!) im Internet finden",
+    "text": "Man kann Themes zu allem (!) im Internet finden\n\n\n\n\n\n\n\n\n\nGitHub-Repo: https://github.com/dschnitzlein/GDSR_2_Part_1/"
   }
 ]
