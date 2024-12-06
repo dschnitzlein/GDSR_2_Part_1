@@ -3,7 +3,7 @@ rm(list=ls())
 library(tidyverse)
 library(ggthemes)
 
-cars_df <- read_csv("Documents/THD/Lehre/InnStat/GrundlagenR/Skript/GDSR_1_Part_1/Files for Download/ToyotaCorolla.csv")
+cars_df <- read_csv("ToyotaCorolla.csv")
 
 View(cars_df)
 
